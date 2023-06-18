@@ -1,0 +1,78 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  font-family: "Montserrat";
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  
+  color: #91dae1;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient-custom{
+  background: linear-gradient(90deg, #6e95f3, #33fec4, #2cd1fa);
+  background-size: 400% 400%;
+  animation: AnimationName 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-custom1{
+  background: linear-gradient(90deg,#6e95f3, #33fec4, #2cd1fa);
+  background-size: 400% 400%;
+  animation: AnimationName 8s ease infinite;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+@keyframes AnimationName {
+  0% {
+      background-position: 0% 51%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 51%;
+  }
+}
+
+.custom-background{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1052%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(192%2c 238%2c 242%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c432.792C98.842%2c424.472%2c206.078%2c504.072%2c290.876%2c452.611C375.492%2c401.26%2c358.769%2c272.31%2c406.931%2c185.839C461.052%2c88.667%2c585.612%2c26.269%2c590.23%2c-84.862C594.882%2c-196.827%2c504.485%2c-288.869%2c430.14%2c-372.719C356.47%2c-455.808%2c276.28%2c-555.393%2c165.556%2c-563.832C55.743%2c-572.202%2c-26.559%2c-470.101%2c-121.792%2c-414.786C-193.073%2c-373.383%2c-270.616%2c-343.535%2c-323.124%2c-279.989C-374.867%2c-217.368%2c-388.032%2c-136.252%2c-415.198%2c-59.697C-449.708%2c37.552%2c-520.634%2c128.384%2c-504.19%2c230.256C-486.409%2c340.411%2c-427.685%2c462.789%2c-324.146%2c504.381C-219.346%2c546.48%2c-112.542%2c442.265%2c0%2c432.792' fill='%23aee9ee'%3e%3c/path%3e%3cpath d='M1440 914.981C1515.174 918.01 1593.2640000000001 936.7049999999999 1660.843 903.6379999999999 1731.54 869.0450000000001 1781.233 802.347 1815.248 731.37 1849.676 659.533 1881.017 575.429 1854.061 500.467 1827.705 427.174 1728.275 413.22 1679.116 352.805 1627.46 289.321 1639.224 171.19600000000003 1562.642 142.32 1487.508 113.99000000000001 1417.684 199.31599999999997 1341.818 225.623 1270.7 250.28300000000002 1188.255 243.45100000000002 1130.789 292.067 1069.5230000000001 343.899 1021.444 419.176 1018.251 499.362 1015.1320000000001 577.674 1076.527 640.062 1114.194 708.7909999999999 1148.876 772.073 1169.329 847.6990000000001 1230.307 886.289 1291.153 924.796 1368.051 912.082 1440 914.981' fill='%23d2f3f6'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1052'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+
+}
