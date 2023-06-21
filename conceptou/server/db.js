@@ -1,8 +1,8 @@
 const mongoose = require("mongoose")
-const MONGO_KEY = "gXMLwl8W3R6abzk5"
+const MONGO_KEY = "your mongo key"
 
 const URL =
-  `mongodb+srv://karanxidhu:${MONGO_KEY}@cluster0.jwzjbnz.mongodb.net/?retryWrites=true&w=majority`;
+  `your database`;
 
 const connectmongodb = () => {
     mongoose.connect(URL, { useNewUrlParser: true });

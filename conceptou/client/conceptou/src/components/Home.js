@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useEffect}from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  
   return (
     <>
-      <div className="w-full min-h-[91vh] custom-background bg-cover">
+      <div className="w-full min-h-[89vh] custom-background bg-cover">
         <div className="w-[90vw] mx-auto pt-14 md:pt-32">
           <h1 className="text-6xl font-semibold text-center w-full text-[#181823] leading-none sm:text-6xl md:text-8xl">
             Welcome to <br />{" "}
@@ -18,19 +19,24 @@ const Home = () => {
             specializes in delivering creative solutions that drive success for
             our clients. We are here to transform your concepts into reality.
           </p>
-          <div className="">
+          {localStorage.getItem("token")?<>
+          <div className="h-20 w-full">
+
+          </div>
+          </>:<div className="">
             <h1 className="text-xl font-semibold text-center pt-10 md:pt-24 md:text-4xl">
               Log In Now
-              <span class="material-symbols-outlined text-sm md:text-2xl">
+              <span className="material-symbols-outlined text-sm md:text-2xl">
                 chevron_right
               </span>
             </h1>
-            <Link to="/">
+            <Link to="/login">
               <button className="px-3 py-1 gradient-custom1 md:text-xl font-semibold text-[#d5f4f6] relative left-[40%] min-[500px]:left-[42%] min-[700px]:left-[45%] rounded-xl mt-5 md:mt-10 md:px-7 md:py-3 text-xs ">
                 Log In
               </button>
             </Link>
-          </div>
+          </div>}
+          
           
           <div className=" pt-32 flex justify-center items-center flex-col gap-20 pb-28">
             <div className="flex justify-center items-center gap-12 flex-col md:flex-row">

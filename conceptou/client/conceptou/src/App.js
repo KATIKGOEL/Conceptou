@@ -7,6 +7,8 @@ import Services from "./components/Services";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route exact path="/services" element={<Services />} />
       <Route exact path="/blogs" element={<Blogs />} />
       <Route exact path="/contact" element={<Contact />} />
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/signup" element={<Signup />} />
       </Routes>
     </Router>
     </>

@@ -20,7 +20,7 @@ router.post(
     const errors = validationResult(req);
     //errors in validation result
     if (!errors.isEmpty()) {
-      res.status(400).json({ errors: errors.array() });
+      return res.status(400).json({ errors: errors.array() });
     }
     //finding existing users
     try {
@@ -63,13 +63,15 @@ router.post(
     const errors = validationResult(req);
     //errors in validation result
     if (!errors.isEmpty()) {
-      res.status(400).json({ errors: errors.array() });
+      return res.status(400).json({ errors: errors.array() });
     }
     const { email, password } = req.body;
     try {
       let user = await User.findOne({ email });
       if (!user) {
-        return res.status(400).json({ error: "Use correct login info" });
+        return (
+          res.status(400).json({ error: "Use correct login info" }))
+
       }
 
       const passwordCompare = await bcrypt.compare(password, user.password);

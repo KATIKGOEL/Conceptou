@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="w-full min-h-[91vh] custom-background bg-cover">
+      <div className="w-full min-h-[89vh] custom-background bg-cover">
         <div className="w-[90vw] mx-auto pt-5 md:pt-20 relative pb-10">
           <h1 className="text-5xl font-semibold text-center gradient-custom leading-none sm:text-6xl md:text-7xl">
             About Us

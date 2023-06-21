@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-    <div className='w-full min-h-[91vh] custom-background bg-cover flex justify-center items-center flex-col'>
+    <div className='w-full min-h-[89vh] custom-background bg-cover flex justify-center items-center flex-col'>
         <h1 className="text-5xl font-semibold text-center gradient-custom leading-none sm:text-6xl md:text-7xl">
         Co-founder Thoughts:
           </h1>
